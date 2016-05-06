@@ -7,7 +7,7 @@ ENV GOLANG_DOWNLOAD_SHA256 e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb
 
 RUN apt-get update && \
     apt-get install -y \
-            apt-transport-https ca-certificates curl wget \
+            apt-transport-https ca-certificates curl wget build-essential git mercurial bzr \
             gcc libc6-dev-i386 gcc-arm-linux-gnueabi gcc-mingw-w64 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
