@@ -1,9 +1,9 @@
 FROM ubuntu:trusty
 MAINTAINER Jeremy Chang <jeremychang@qnap.com>
 
-ENV GOLANG_VERSION 1.6.2
+ENV GOLANG_VERSION 1.7.5
 ENV GOLANG_DOWNLOAD_URL https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz
-ENV GOLANG_DOWNLOAD_SHA256 e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a
+ENV GOLANG_DOWNLOAD_SHA256 2e4dd6c44f0693bef4e7b46cc701513d74c3cc44f2419bf519d7868b12931ac3
 
 RUN apt-get update && \
     apt-get install -y \
